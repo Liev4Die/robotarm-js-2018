@@ -10,10 +10,8 @@
 
             robotArm.loadLevel("exercise 11");
             
-            robotArm.scan(white);
-            if (true) {
+            for(robotArm.scan("white");){
                 robotArm.grab();
-                robotArm.moveRight();
             }
 
             robotArm.run();
