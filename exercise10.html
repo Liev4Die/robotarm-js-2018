@@ -10,13 +10,17 @@
 
             robotArm.loadLevel("exercise 11");
             
-            for(a = 0; a <9; a++){
+            for(d = 0; d <10; d++){
                 robotArm.moveRight();
+            }
+            for(a = 0; a <9; a++){
+                robotArm.moveLeft();
                 robotArm.grab();
                 for(b = 0; b <1; b++){
                 if (robotArm.scan() == "white") {
                     robotArm.moveRight();
                     robotArm.drop();
+                    robotArm.moveLeft();
                 }
                 else{
                     robotArm.drop();
